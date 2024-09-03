@@ -1,6 +1,6 @@
 # IPM 2024/25. Práctica individual
 
-El objetivo de esta práctica es el **diseño de una interface de
+El objetivo de esta práctica es el **diseño de una interfaz de
 usuaria (IU)** para la aplicación que se describe más adelante.
 
 
@@ -43,8 +43,8 @@ asignatura en el campus virtual de la universidad, usando la tarea
 
 ## La aplicación
 
-La aplicación para la que estamos diseñando la interface es una
-aplicación con una [interface gráfica de
+La aplicación para la que estamos diseñando la interfaz es una
+aplicación con una [interfaz gráfica de
 escritorio](https://en.m.wikipedia.org/wiki/Graphical_user_interface).
 
 
@@ -53,7 +53,7 @@ sanitario. La/os usuaria/os son los facultativos que usaran la
 aplicación para pautar los medicamentos y su posología de las personas
 usuarias de los servicios sanitarios.
 	
-La aplicación se engloga dentro un sistema complejo, conformado por
+La aplicación se engloba dentro un sistema complejo, conformado por
 distintas aplicaciones dirigidas a distintas tipologías de usuarias,
 así como un servidor encargado de consolidar toda la información
 disponible en el sistema y regular el acceso a la misma.
@@ -64,11 +64,11 @@ usuaria/os:
   - realizan las tareas clásicas de alta, baja y modificación de
     medicamentos asignados a un paciente.
 	
-  - realizan las taread clásicas de alta, baja y modificación de la
+  - realizan las tareas clásicas de alta, baja y modificación de la
     posología de cada medicamento asignado a un paciente.
 
 
-Para diseñar la inteface tienes que:
+Para diseñar la interfaz tienes que:
 
   1. Identificar qué tipos de usuaria pueden estar interesadas en usar
      la aplicación. En este caso, esta información ya nos viene dada
@@ -82,37 +82,37 @@ Para diseñar la inteface tienes que:
   4. Comprobar que dichos casos de uso son viables con el api que
      ofrece el [servidor](server.md).
 	 
-  5. Diseñar ua interface para cubrir dichos casos.
+  5. Diseñar una interfaz para cubrir dichos casos.
   
-     Incluir en el diseño de la interface los elementos necesarios
+     Incluir en el diseño de la interfaz los elementos necesarios
      para gestionar los problemas de las comunicaciones en red:
      tiempos de respuesta largos, fallos del servidor, fallos de la
      red, ...
 
-  6. Calcular la complejidad de la interface y generar los casos de
+  6. Calcular la complejidad de la interfaz y generar los casos de
      prueba correspondientes.
 	 
 
 ## Fase 1: Diseño
 
-En esta fase tenemos que diseñar al interface de la aplicación y
+En esta fase tenemos que diseñar la interfaz de la aplicación y
 obtener como resultado la documentación donde se describe dicho
 diseño.
 
 Por desgracia no existe un lenguaje estandarizado para especificar el
-diseño de una interface de usuaria. Es decir, no disponemos de un
+diseño de una interfaz de usuaria. Es decir, no disponemos de un
 lenguaje análogo a los que usamos en diseño software como UML o C4.
 Los lenguajes usados de basan en las convenciones y las normas
 establecidas en cada organización.
 
-El diseño de la interface tiene que cubrir dos aspectos principales:
+El diseño de la interfaz tiene que cubrir dos aspectos principales:
 _estático_ y _dinámico_ y ajustarse a las definiciones establecidas en
 clase de teoría.
 
 
 ### La parte estática
 
-La parte estática muestra la composición de la interface: los
+La parte estática muestra la composición de la interfaz: los
 elementos que la conforman y la disposición espacial de los mismos.
 
 Al tratarse de interfaces gráficas, esta parte se expresa, como
@@ -157,7 +157,7 @@ faciliten su comprensión.
 
 > :warning: La aplicación que estamos desarrollando realiza peticiones
 > de red al servidor. No olvides que estas peticiones pueden
-> fallar. El diseño de la inteface debe incluir estas situaciones
+> fallar. El diseño de la interfaz debe incluir estas situaciones
 
 
 > **Note** Para distinguir entre wireframe y mid-fidelity emplearemos
@@ -168,7 +168,7 @@ faciliten su comprensión.
 ### La parte dinámica
 
 La parte dinámica muestra la manera en que la usuaria interactúa con
-la interface. De nuevo, existen varios gráficos, diagramas, ... que
+la interfaz. De nuevo, existen varios gráficos, diagramas, ... que
 podemos usar: `user journey`, `user flow`, `task flow`, ... Y de nuevo
 el uso de la terminología no es consistente por parte de los distintos
 autores. Veamos a continuación un ejemplo (no software):
@@ -186,7 +186,7 @@ journey
 ```
 
 En esta parte del diseño tenemos que mostrar cómo transcurre la
-interacción con la interface de usuaria en cada uno de los casos de
+interacción con la interfaz de usuaria en cada uno de los casos de
 uso de la aplicación.
 
 Dada la falta de estandarización y consenso, podemos usar el tipo de
@@ -196,7 +196,7 @@ Independientemente de las opciones elegidas en este apartado, para
 posibilitar el desarrollo del siguiente apartado, también debemos
 crear un diagrama de flujo empleando el lenguaje
 [_mermaid_](https://github.blog/2022-02-14-include-diagrams-markdown-files-mermaid/). A
-continuación vemos un jemplo:
+continuación vemos un ejemplo:
 
 
 ```
@@ -233,13 +233,13 @@ flowchart TD
 
 Para complementar el diseño, debemos incluir los siguientes apartados:
 
-  - Medida de la complejidad de la interface.
+  - Medida de la complejidad de la interfaz.
 
     Calcularemos la [_complejidad
     ciclomática_](https://en.wikipedia.org/wiki/Cyclomatic_complexity)
     del diagrama de flujo.
 
-  - Generar los casos de prueba de la interface.
+  - Generar los casos de prueba de la interfaz.
   
     No es necesario especificar los pasos que conforman cada caso de
     prueba. Para cada caso de prueba decidiremos si es relevante o no
