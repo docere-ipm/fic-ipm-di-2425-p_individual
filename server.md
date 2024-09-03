@@ -11,5 +11,4 @@ El servidor ofrece los endpoints y objetos que se detallan a continuación.
 
 Los objetos a los que accedemos con dichos endpoints son los siguientes:
 
-![objetos-1](objects-1.png)
-![objetos-2](objects-2.png)
+![schema](schema.png)
